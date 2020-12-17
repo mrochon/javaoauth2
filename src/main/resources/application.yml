@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      client:
+        registration:
+          b2c:
+            client-id: fcbb5bd6-fb15-41fa-aacd-580be799c820
+            client-secret: '621.CtxONmN~w-E8~uOH7eKwI-p-ouI6mY'
+            authorization-grant-type: authorization_code
+            redirectUri: http://localhost:8080/oauth2/authorization/b2c
+            scope: openid
+        provider:
+          b2c:
+            authorization-uri: https://mrochonb2cprod.b2clogin.com/mrochonb2cprod.onmicrosoft.com/b2c_1_basicsusi/oauth2/v2.0/authorize
+            token-uri: https://mrochonb2cprod.b2clogin.com/mrochonb2cprod.onmicrosoft.com/b2c_1_basicsusi/oauth2/v2.0/token
+            jwk-set-uri: https://mrochonb2cprod.b2clogin.com/mrochonb2cprod.onmicrosoft.com/b2c_1_basicsusi/discovery/v2.0/keys
